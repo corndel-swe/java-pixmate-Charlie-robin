@@ -1,5 +1,7 @@
 package com.corndel.pixmate.exercises;
 
+import java.util.Arrays;
+
 public class Exercise1b {
   // https://tech-docs.corndel.com/java/for-each-loops.html
 
@@ -11,7 +13,6 @@ public class Exercise1b {
    * @returns {int} The sum of the array
    */
   public static int sumArray(int[] arr) {
-    // TODO
-    return 0;
+    return Arrays.stream(arr).sum();
   }
 }
