@@ -1,6 +1,6 @@
 package com.corndel.pixmate.drawings;
 
-import com.github.tomaslanger.chalk.Chalk;
+
 
 public class Necklace {
   public static void main(String[] args) {
@@ -10,14 +10,14 @@ public class Necklace {
     for (int i = 0; i < 10; i++) {
       if (i % 2 == 0) {
         // Use Chalk to color the 'O' bead green
-        line.append(Chalk.on("O").green());
+        line.append("O");
       } else {
         line.append("--");
       }
     }
 
     // Add one more green bead at the end
-    line.append(Chalk.on("O").green());
+    line.append("O");
 
     // Output the necklace
     System.out.println(line.toString());
