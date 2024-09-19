@@ -1,5 +1,7 @@
 package com.corndel.pixmate.exercises;
 
+import java.util.Arrays;
+
 /**
  * @see <a href="https://tech-docs.corndel.com/java/loop-control-flow.html">Loop Control Flow in Java</a>
  */
@@ -16,7 +18,12 @@ public class Exercise2a {
    * @return the sum of numbers that meet the criteria
    */
   public static int sumSelective(int[] numbers) {
-    // TODO
-    return 0;
+    return Arrays.stream(numbers).reduce(0, (acc, cur) -> {
+      if (!(cur > 10 && cur % 2 == 0) && (cur > 10 || cur % 2 == 0)) {
+        return acc + cur;
+      } else {
+        return acc;
+      }
+    });
   }
 }

@@ -16,8 +16,13 @@ public class Exercise1a {
    * @return the sum of the even numbers smaller than or equal to n
    */
   public static int addEven(int n) {
-    // TODO
-    return 0;
+    int count = 0;
+
+    for (int i = 0; i <= n; i += 2) {
+      count += i;
+    }
+
+    return count;
   }
 
 }
